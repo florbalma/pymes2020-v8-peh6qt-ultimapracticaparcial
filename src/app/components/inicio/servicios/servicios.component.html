@@ -1,0 +1,23 @@
+<div class="container">
+<h3>{{Titulo}}</h3>
+<div>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+            <th class="text-center">IdServicio</th>
+            <th class="text-center">Descripcion</th>
+            <th class="text-center">Importe</th>
+            <th class="text-center">CantidadHoras</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of Items">
+            <td>{{item.IdServicio}}</td>
+            <td>{{item.Descripcion | uppercase}}</td>
+            <td>{{item.Importe | uppercase}}</td>
+            <td>{{item.CantidadHoras | uppercase}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+</div>
